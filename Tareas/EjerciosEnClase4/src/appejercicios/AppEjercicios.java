@@ -13,7 +13,7 @@ public class AppEjercicios {
         /*Instancia para la captura de datos por teclado*/
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("...........Ejercio número 1...........");
+        System.out.println("...........Ejercicio número 1...........");
         System.out.println("Digite un número");
         A = Integer.parseInt(teclado.nextLine());
         System.out.println("Digite otro número");
@@ -27,7 +27,7 @@ public class AppEjercicios {
         System.out.println("La diferencia de A - N es: " + p.diferencia());
         System.out.println("El valor númerico de palabra es: " + p.palabra());
         System.out.println("");
-        System.out.println("...........Ejercio número 2...........");
+        System.out.println("...........Ejercicio número 2...........");
         System.out.println("Digite un número para X");
         X = Integer.parseInt(teclado.nextLine());
         System.out.println("Digite un número para Y");
@@ -48,14 +48,14 @@ public class AppEjercicios {
         System.out.println("La multiplicación de N * M es: " + B.mult2());
         System.out.println("La división de N / M es: " + B.div2());
         System.out.println("");
-        System.out.println("...........Ejercio número 3...........");
+        System.out.println("...........Ejercicio número 3...........");
         System.out.println("Digite un número");
         Y = Integer.parseInt(teclado.nextLine());
         /*Instancia de la clase ejercicio3*/
         ejercicio3 D = new ejercicio3(Y);
         System.out.println("El valor de N es: " + D.aumentarvalor());
         System.out.println("");
-        System.out.println("...........Ejercio número 4...........");
+        System.out.println("...........Ejercicio número 4...........");
         System.out.println("Digite un valor numerico para A");
         A = Integer.parseInt(teclado.nextLine());
         System.out.println("Digite un valor numerico para B");
@@ -69,20 +69,20 @@ public class AppEjercicios {
         System.out.println("Los valores iniciales de las variables son: " + " A=" + A + " B=" + Be + " C=" + Ce + " D=" + De);
         System.out.println("Los nuevos valores de las variables son: A=" + E.cambioA() + "  B=" + E.cambioB() + "  C=" + E.cambioC() + "  D=" + E.cambioD());
         System.out.println("");
-        System.out.println("...........Ejercio número 5...........");
+        System.out.println("...........Ejercicio número 5...........");
         System.out.println("Digite un valor numerico");
         A = Integer.parseInt(teclado.nextLine());
         /*Instancia de la clase ejercicio5*/
         ejercicio5 F = new ejercicio5(A);
         System.out.println(F.parImpar());
         System.out.println("");
-        System.out.println("...........Ejercio número 6...........");
+        System.out.println("...........Ejercicio número 6...........");
         System.out.println("Digite un valor numerico");
         A = Integer.parseInt(teclado.nextLine());
         /*Instancia de la clase ejercicio6*/
         ejercicio6 G = new ejercicio6(A);
         System.out.println(G.mayorMenor());
-        System.out.println("...........Ejercio número 7...........");
+        System.out.println("...........Ejercicio número 7...........");
         System.out.println("Digite un valor numerico");
         A = Integer.parseInt(teclado.nextLine());
         /*Instancia de la clase ejercicio7*/
