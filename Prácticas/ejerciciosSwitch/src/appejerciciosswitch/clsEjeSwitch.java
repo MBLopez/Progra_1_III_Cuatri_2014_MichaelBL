@@ -99,23 +99,102 @@ public class clsEjeSwitch {
     /*Método para retornar un número aleatorio y su equivalente en romanos*/
 
     public String aleatorioRomano(int A) {
-        int n=A, T1=0;
+        int n = A;
         String r = "", t = "";
-        String Miles [] = {"M", "MM"};
-        String Centenas[] = {"CC", "CCC", "CD", "DC", "DCC", "DCCC", "CM"};
-        String Decenas [] = {"XX", "XXX", "XL", "L","LX", "LXX", "LXXX", "XC", "C"};
+        String Miles[] = {"M", "MM"};
+        String Centenas[] = {"C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+        String Decenas[] = {"IX", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
         String Unidades[] = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
-        if (n>2000){
-         n=n-2000;   
-        t = Miles[1];
+        if (n >= 2000) {
+            n = n - 2000;
+            t = Miles[1];
+        }
+        if (n >= 1000 && n < 2000) {
+            n = n - 1000;
+            t = t + Miles[0];
+        }
+        if (n >= 500 && n < 1000) {
+
+            if (n > 900) {
+                n = n - 900;
+                t = t + Centenas[8];
+            }
+            if (n > 800 && n < 900) {
+                n = n - 800;
+                t = t + Centenas[7];
+            }
+            if (n > 700 && n < 800) {
+                n = n - 700;
+                t = t + Centenas[6];
+            }
+            if (n > 600 && n < 700) {
+                n = n - 600;
+                t = t + Centenas[5];
+            }
+            if (n >= 500 && n < 600) {
+                n = n - 500;
+                t = t + Centenas[4];
+            }
+        }
+        if (n >= 100 && n < 500) {
+            if (n >= 400 && n < 500) {
+                n = n - 400;
+                t = t + Centenas[3];
+            }
+            if (n >= 300 && n < 400) {
+                n = n - 300;
+                t = t + Centenas[2];
+            }
+            if (n >= 200 && n < 300) {
+                n = n - 200;
+                t = t + Centenas[1];
+            }
+            if (n >= 100 && n < 200) {
+                n = n - 100;
+                t = t + Centenas[0];
+            }
+        }
+        if (n > 10 && n < 100) {
+            if (n >= 90 && n < 100) {
+                n = n - 90;
+                t = t + Decenas[8];
+            }
+            if (n >= 80 && n < 90) {
+                n = n - 80;
+                t = t + Decenas[7];
+            }
+            if (n >= 70 && n < 80) {
+                n = n - 70;
+                t = t + Decenas[6];
+            }
+            if (n >= 60 && n < 70) {
+                n = n - 60;
+                t = t + Decenas[5];
+            }
+            if (n >= 50 && n < 60) {
+                n = n - 50;
+                t = t + Decenas[4];
+            }
+            if (n >= 40 && n < 50) {
+                n = n - 40;
+                t = t + Decenas[3];
+            }
+            if (n >= 30 && n < 40) {
+                n = n - 30;
+                t = t + Decenas[2];
+            }
+            if (n >= 20 && n < 40) {
+                n = n - 20;
+                t = t + Decenas[1];
+            }
+            if (n > 10 && n < 20) {
+                n = n - 10;
+                t = t + Decenas[0];
+            }
         }
         if (n <= 10) {
 
-            t = Unidades[n - 1];
-        } else {
-            if (n <= 50) {
-
-            }
+            t = t + Unidades[n - 1];
         }
         r = r + t;
         return r;
