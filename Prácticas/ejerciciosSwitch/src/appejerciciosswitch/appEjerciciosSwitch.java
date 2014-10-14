@@ -60,7 +60,7 @@ public class appEjerciciosSwitch {
                     break;
                 case 5:
                     Random aleatorio = new Random();
-                    A = 1 + aleatorio.nextInt(10);
+                    A = 1 + aleatorio.nextInt(3000);
                     clsEjeSwitch V = new clsEjeSwitch(A, letra);
                     System.out.println("Número aleatorio es= " + A + " su equivalente en romano es= " + V.aleatorioRomano(A));
                     break;
