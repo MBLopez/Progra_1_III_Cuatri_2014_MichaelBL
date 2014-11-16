@@ -12,7 +12,7 @@ public class cls1Examen {
     String palabra = "";
     String abecedario[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
     int billetes[] = {5000, 2000, 1000, 500, 100, 50, 25};
-    //String letras[] = {"Cinco mil", "Dos mil", "Mil", "Quinientos", "Cien", "Cincuenta", "Veinte y cinco"};
+    
     /*Método constructor*/
 
     public cls1Examen(String pal, byte n) {
